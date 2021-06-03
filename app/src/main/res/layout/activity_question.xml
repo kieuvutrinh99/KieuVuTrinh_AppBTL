@@ -1,7 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="match_parent"
+<RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_diemQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐIỂM:0"
+        android:textSize="30dp"
+        android:textStyle="italic|bold"/>
+    <TextView
+        android:layout_below="@+id/tv_diemQuestion"
+        android:textSize="30dp"
+        android:id="@+id/tv_questionSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:text="Câu hổi 1/a"/>
+    <TextView
+        android:layout_below="@+id/tv_questionSo"
+        android:textSize="30dp"
+        android:id="@+id/tv_questionChuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:text="Chủ đề:a"/>
+    <TextView
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="00:30"/>
+    <TextView
+        android:layout_below="@id/tv_questionChuDe"
+        android:id="@+id/tv_question"
+        android:textAlignment="center"
+        android:text="Câu hỏi ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <RadioGroup
+        android:id="@+id/luachondapan"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_dapan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đáp án 1"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/rb_dapan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đáp án 2"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/rb_dapan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đáp án 3"/>
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/rb_dapan4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đáp án 4"/>
+    </RadioGroup>
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/luachondapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác nhận"/>
 
-</LinearLayout>
+</RelativeLayout>
